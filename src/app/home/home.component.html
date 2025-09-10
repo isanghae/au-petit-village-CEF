@@ -1,0 +1,21 @@
+<div class="presentation">
+  <h1>Bienvenue chez "Au petit village"</h1>
+  <p>Figurines faites main inspirées d'Astérix & Obélix, pour les fans nostalgiques des aventures gauloises.</p>
+</div>
+
+<div class="search-sort">
+  <input type="text" placeholder="Chercher par nom" [(ngModel)]="searchTerm" (input)="onSearchChange()" />
+
+  <button (click)="onSortChange('asc')">Prix croissant</button>
+  <button (click)="onSortChange('desc')">Prix décroissant</button>
+</div>
+
+<div class="catalog">
+  <div *ngFor="let product of filteredProducts" class="product-card">
+    <a [routerLink]="['/product', product.id]">
+      <img [src]="product.image" [alt]="product.name" />
+      <h2>{{ product.name }}</h2>
+      <p>€{{ product.price }}</p>
+    </a>
+  </div>
+</div>
