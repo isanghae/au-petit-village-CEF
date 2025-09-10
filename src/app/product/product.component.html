@@ -1,6 +1,21 @@
-<div *ngIf="product" class="product-detail">
-  <h1>{{ product.name }}</h1>
-  <img [src]="product.image" [alt]="product.name" />
-  <p>{{ product.description }}</p>
-  <p class="price">Prix : €{{ product.price }}</p>
+<h1>Nos figurines</h1>
+<div *ngIf="products" class="container-descriptif">
+  <h2>{{ products.name }}</h2>
+  <div class="produit-detail">
+    <img [src]="products.image" [alt]="products.name" />
+    <section class="caracteristiques">
+      <h2>Caractéristiques</h2>
+      <ul class="caracteristiques-list">
+        <li>Matériau :{{ products.materiau }}</li>
+        <li>Hauteur : {{ products.hauteur }}</li>
+        <li>Disponibilité : {{ product.disponibilite }}</li>
+      </ul>
+      <p>
+        Prix : <strong>{{ products.price }}€</strong>
+      </p>
+      <button>
+        <a href="#">Acheter !</a>
+      </button>
+    </section>
+  </div>
 </div>

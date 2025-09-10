@@ -1,0 +1,362 @@
+@font-face {
+    font-family : "Bubble";
+    src: url(/assets/font/bubbleboddyNeue-regular.woff);
+}
+@font-face {
+    font-family : "Comfortaa";
+    src: url(/assets/font/Comfortaa-Regular.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.8;
+  background-color: #fdd90B;
+  color: #151217;
+}
+
+@media screen and (max-width: 599px) {
+
+  /* Présentation Au petit village */
+  h1{
+    font-size: 24px;
+    font-family:'Bubble', sans-serif;
+  }
+  h2{
+    font-size: 20px;
+    font-family:'Bubble', sans-serif;
+  }
+  h3{
+    font-size: 17px;
+    font-family:'Bubble', sans-serif;
+  }
+  h4{
+    font-size: 15px;
+    font-family:'Bubble', sans-serif;
+  }
+  p, ul, li, a{
+    font-size: 14px;
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 18px;
+    text-align: justify;
+  }
+  .container-accueil {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-presentation {
+    background-color: #151217;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .container-presentation h1 {
+    font-family: 'Bubble', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: white;
+  }
+  .container-presentation button a {
+    text-decoration: none;
+    color: white;
+    background-color: #DA001E;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  .container-presentation button a:hover {
+    text-decoration: none;
+    color: #151217;
+    background-color: #fdd90B;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  button{
+    border: none;
+    font-family: 'Comfortaa', sans-serif;
+  }
+  .container-presentation p {
+    text-align: center;
+  }
+
+  /* Trois produits disponibles */
+  .card-accueil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 25px;
+    margin: 15px auto;
+    gap: 5px;
+    justify-content:space-around;
+    align-content: stretch;
+    background-color: white;
+  }
+  .titre-card-accueil{
+    width: 100%;
+    height: 30%;
+    padding-left: 20px;
+}
+  .container-card button {
+    border: none;
+    background-color: white;
+    margin: 10px 0 20px 0;
+  }
+  .container-card button a {
+    text-decoration: none;
+    color: white;
+    background-color: #DA001E;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  .container-card button a:hover {
+    background-color: #f9D0A3;
+    color: #151217;
+  }
+  .card-accueil img {
+    width: 250px;
+    height: 200px;
+    align-self: center;
+}
+.card-group-accueil{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  margin: auto;
+}
+}
+  
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  /* Présentation Au petit village */
+  h1{
+    font-size: 32px;
+    font-family:'Bubble', sans-serif;
+  }
+  h2{
+    font-size: 28px;
+    font-family:'Bubble', sans-serif;
+  }
+  h3{
+    font-size: 22px;
+    font-family:'Bubble', sans-serif;
+  }
+    h4{
+  font-size: 18px;
+  font-family:'Bubble', sans-serif;
+  }
+  p, ul, li,a {
+    font-size: 16px;
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 18px;
+    text-align: justify;
+  }
+  .container-accueil {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-presentation {
+    background-color: #151217;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container-presentation h1 {
+    font-family: 'Bubble', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .container-presentation button a {
+    text-decoration: none;
+    color: white;
+    background-color: #DA001E;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  .container-presentation button a:hover {
+    text-decoration: none;
+    color: #151217;
+    background-color: #fdd90B;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  button{
+    border: none;
+    font-family: 'Comfortaa', sans-serif;
+  }
+  .container-presentation p {
+    text-align: center;
+  }
+
+  /* Trois produits disponibles */
+    .card-accueil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 25px;
+    margin: 15px auto;
+    gap: 5px;
+    justify-content:space-around;
+    align-content: stretch;
+    background-color: white;
+  }
+  .container-card button {
+    border: none;
+    background-color: white;
+    margin: 10px 0 20px 0;
+  }
+  .container-card button a {
+    text-decoration: none;
+    color: white;
+    background-color: #DA001E;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  .container-card button a:hover {
+    background-color: #f9D0A3;
+    color: #151217;
+  }
+  .card-accueil img {
+    width: 250px;
+    height: 200px;
+    align-self: center;
+  }
+  .card-group-accueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    margin: auto;
+  }
+  .titre-card-accueil{
+    width: 100%;
+    height: 30%;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  /* Présentation Au petit village */  
+  h1{
+    font-size: 40px;
+    font-family:'Bubble', sans-serif;
+  }
+  h2{
+    font-size: 32px;
+    font-family:'Bubble', sans-serif;
+  }
+  h3{
+    font-size: 24px;
+    font-family:'Bubble', sans-serif;
+  }
+  h4{
+    font-size: 20px;
+    font-family:'Bubble', sans-serif;
+  }
+  p, ul, li, a {
+    font-size: 18px;
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 18px;
+    text-align: justify;
+  }
+  .container-accueil {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-presentation {
+    background-color: #151217;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container-presentation h1 {
+    font-family: 'Bubble', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .container-presentation button a {
+    text-decoration: none;
+    color: white;
+    background-color: #DA001E;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  .container-presentation button a:hover {
+    text-decoration: none;
+    color: #151217;
+    background-color: #fdd90B;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  button{
+    border: none;
+    font-family: 'Comfortaa', sans-serif;
+  }
+  .container-presentation p {
+    text-align: center;
+  }
+
+  /* Trois produits disponibles */
+  .card-accueil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    padding: 25px;
+    margin: 5px 20px 15px 5px;
+    gap: 5px;
+    justify-content:space-around;
+    align-content: stretch;
+    background-color: white;
+  }
+  .container-card{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    flex-wrap: nowrap;
+  }
+  .container-card button {
+    border: none;
+    background-color: white;
+    margin: 10px 0 20px 0;
+  }
+  .container-card button a {
+    text-decoration: none;
+    color: white;
+    background-color: #DA001E;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  .container-card button a:hover {
+    color: #151217;
+    background-color: #f9D0A3;
+  }
+  .card-accueil img {
+    width: 250px;
+    height: 200px;
+    align-self: center;
+  }
+  .card-group-accueil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin: auto;
+    width: 90%;
+  }
+  .titre-card-accueil{
+    width: 100%;
+    height: 30%;
+    padding-left: 20px;
+  }
+}

@@ -1,10 +1,64 @@
-<div class="presentation">
-  <h1>Bienvenue chez "Au petit village"</h1>
-  <p>Figurines faites main inspirées d'Astérix & Obélix, pour les fans nostalgiques des aventures gauloises.</p>
+<div class="container-accueil">
+  <section class="container-presentation">
+    <h1>Bienvenue au Petit Village !</h1>
+    <p>
+      L'histoire de "Au Petit Village" est avant tout une histoire de passion.
+      Une passion dévorante pour l'univers foisonnant d'Astérix et Obélix, né de
+      l'imagination fertile de René Goscinny et Albert Uderzo.
+    </p>
+    <p>
+      Une passion qui, en 2005, a germé dans l'esprit de quelques amis, tous
+      collectionneurs avertis et amateurs inconditionnels de la célèbre bande
+      dessinée.
+    </p>
+    <button>
+      <a routerLink="/about" routerLinkActive="active">En savoir plus</a>
+    </button>
+  </section>
+  <section class="container-card">
+    <h2 class="titre-card-accueil">Nos produits</h2>
+    <div class="card-group-accueil">
+      <div class="card-accueil">
+        <img
+          src="/assets/images/figurine-asterix-le-gaulois.jpg"
+          alt="figurine d'Astérix le gaulois"
+        />
+        <h4>Figurine d'Astérix le gaulois</h4>
+        <button>
+          <a routerLink="/products" routerLinkActive="active">Découvrir</a>
+        </button>
+      </div>
+      <div class="card-accueil">
+        <img
+          src="/assets/images/figurine-obélix-le-gaulois.png"
+          alt="figurine d'Obélix le gaulois"
+        />
+        <h4>Figurine d'Obélix le gaulois</h4>
+        <button>
+          <a routerLink="/products" routerLinkActive="active">Découvrir</a>
+        </button>
+      </div>
+      <div class="card-accueil">
+        <img
+          src="/assets/images/figurine-idefix.png"
+          alt="figurine d'Idéfix le chien"
+        />
+        <h4>Figurine d'Idéfix le chien</h4>
+        <button>
+          <a routerLink="/products" routerLinkActive="active">Découvrir</a>
+        </button>
+      </div>
+    </div>
+  </section>
 </div>
 
 <div class="search-sort">
-  <input type="text" placeholder="Chercher par nom" [(ngModel)]="searchTerm" (input)="onSearchChange()" />
+  <input
+    type="text"
+    placeholder="Chercher par nom"
+    [(ngModel)]="searchTerm"
+    (input)="onSearchChange()"
+  />
 
   <button (click)="onSortChange('asc')">Prix croissant</button>
   <button (click)="onSortChange('desc')">Prix décroissant</button>
@@ -15,7 +69,7 @@
     <a [routerLink]="['/product', product.id]">
       <img [src]="product.image" [alt]="product.name" />
       <h2>{{ product.name }}</h2>
-      <p>€{{ product.price }}</p>
+      <p>{{ product.price }}€</p>
     </a>
   </div>
 </div>

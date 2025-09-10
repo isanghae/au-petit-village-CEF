@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../services/products.service';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  products: Product[] = [];
-  filteredProducts: Product[] = [];
+  products: ProductService[] = [];
+  filteredProducts: ProductService[] = [];
   searchTerm: string = '';
   sortOrder: 'asc' | 'desc' = 'asc';
 
-  constructor(private productService: ProductsService) { }
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
     this.productService.getProducts().subscribe(data => {

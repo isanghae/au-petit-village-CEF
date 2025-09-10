@@ -1,12 +1,26 @@
-<header>
-  <div class="logo">
-    <a routerLink="/">Au petit village</a>
-  </div>
-  <nav>
-    <ul>
-      <li><a routerLink="/">Accueil</a></li>
-      <li><a routerLink="/about">À propos</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
-    </ul>
+<header class="navbar">
+  <a routerLink="/" routerLinkActive="active" class="lien-logo">
+    <img
+      class="img-logo"
+      src="/public/Logo_au petit village.jpg"
+      alt="logo au petit village"
+    />
+  </a>
+  <nav class="nav-links">
+    <a
+      routerLink="/about"
+      routerLinkActive="active"
+      target="_blank"
+      class="nav-links-item"
+      ><h3>À propos</h3></a
+    >
+    <a
+      routerLink="/product/:id"
+      routerLinkActive="active"
+      target="_blank"
+      class="nav-links-item"
+      ><h3>Produits</h3></a
+    >
+    <a routerLink="#"><h3>Contact</h3></a>
   </nav>
 </header>
