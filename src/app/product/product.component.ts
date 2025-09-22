@@ -1,14 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/products.service';
 
+interface Product {
+  id: number;
+  name: string;
+  image: string;
+  price: number;
+  description: string;
+  materiau: string;
+  hauteur: string;
+  disponibilite: string;
+}
+
 @Component({
   selector: 'app-product',
   standalone: false,
   templateUrl: './product.component.html',
-  styleUrl: './product.component.css'
+  styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  products = [];
+  products: Product[] = [];
 
   constructor(private productService: ProductService) { }
 

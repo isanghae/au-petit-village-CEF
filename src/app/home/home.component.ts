@@ -1,6 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/products.service';
 
+interface Product {
+  id: number;
+  name: string;
+  image: string;
+  price: number;
+  description: string;
+  materiau: string;
+  hauteur: string;
+  disponibilite: string;
+}
+
 @Component({
   selector: 'app-home',
   standalone: false,
@@ -8,18 +19,16 @@ import { ProductService } from '../services/products.service';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  products: ProductService[] = [];
-  filteredProducts: ProductService[] = [];
+  products: Product[] = [];
+  filteredProducts: Product[] = [];
   searchTerm: string = '';
   sortOrder: 'asc' | 'desc' = 'asc';
 
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
-    this.productService.getProducts().subscribe(data => {
-      this.products = data;
-      this.applyFilters();
-    });
+    this.products = this.productService.getProducts();
+    this.applyFilters();
   }
 
   applyFilters() {

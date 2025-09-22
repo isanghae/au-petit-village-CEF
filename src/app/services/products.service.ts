@@ -5,9 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class ProductService {
 
-  FigurineAsterix: string = 'assets/images/figurine-asterix-le-gaulois';
-  FigurineObelix: string = 'assets/images/figurine-obelix-le-gaulois.png';
-  FigurineIdefix: string = 'assets/images/idefix.png';
+  FigurineAsterix: string = 'assets/images/figurine-asterix-le-gaulois.jpg';
+  FigurineObelix: string = 'assets/images/figurine-obélix-le-gaulois.png';
+  FigurineIdefix: string = 'assets/images/figurine-idefix-le-gaulois.png';
 
   private products = [
     {
