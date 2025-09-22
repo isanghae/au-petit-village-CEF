@@ -1,3 +1,12 @@
+@font-face {
+    font-family : "Bubble";
+    src: url(/assets/fonts/bubbleboddyNeue-regular.woff);
+}
+@font-face {
+    font-family : "Comfortaa";
+    src: url(/assets/fonts/Comfortaa-Regular.woff);
+}
+
 @media screen and (max-width: 599px) {
 /* Footer */
   footer {
@@ -12,6 +21,7 @@
     text-align: center;
     flex-wrap: wrap;
     gap: 20px;
+    font-family: 'Comfortaa', Arial, sans-serif;
   }
   .presentation-footer {
     text-align: justify;
@@ -19,6 +29,7 @@
   }
   .presentation-footer h3 {
     text-align: start;
+    font-family: 'Bubble', sans-serif;
   }
   .img-facebook,
   .img-instagram {
@@ -46,6 +57,7 @@
     text-align: center;
     padding: 20px 20px;
     flex-wrap: nowrap;
+    font-family: 'Comfortaa', Arial, sans-serif;
   }
   .presentation-footer {
     text-align: justify;
@@ -56,6 +68,7 @@
   }
   .presentation-footer h3 {
     text-align: start;
+    font-family: 'Bubble', sans-serif;
   }
   .img-facebook,
   .img-instagram {
@@ -83,6 +96,7 @@
     text-align: center;
     padding: 20px 20px;
     flex-wrap: nowrap;
+    font-family: 'Comfortaa', Arial, sans-serif;
   }
   .presentation-footer {
     text-align: justify;
